@@ -1,0 +1,5 @@
+NamePrefix: ${Application}-${Environment}
+BucketName: s3-deployment-bucket
+Application: ${Application}
+Environment: ${Environment}
+Description: "s3 deployment static hosting bucket"

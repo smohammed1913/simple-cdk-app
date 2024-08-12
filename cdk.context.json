@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "Project": "assessment",
+        "Environment": "dev",
+        "Application": "simple-cdk-app",
+        "SubAapplication": "serverless-crud",
+        "SSMDefaultSubEmail": "john.doe@yopmail.com"
+
+    }
+}

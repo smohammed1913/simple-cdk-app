@@ -1,0 +1,30 @@
+LambdaServiceRoleName: ${Application}-${Environment}-lambda-service-role
+NamePrefix:      ${Application}-${Environment}
+Application:      ${Application}
+
+
+
+Lambdas:
+  - Name: create-item
+    ScriptName: create.mjs
+    LambdaArguments:
+      Environment: ${Environment}
+
+  - Name: delete-one-item
+    ScriptName: delete-one.mjs
+    LambdaArguments:
+      Environment: ${Environment}
+
+  - Name: get-all-items
+    ScriptName: get-all.mjs
+    LambdaArguments:
+      Environment: ${Environment}
+
+  - Name: get-one-item
+    ScriptName: get-one.mjs
+    LambdaArguments:
+      Environment: ${Environment}
+
+
+
+SNSAlertTopicName: ${Application}-${Environment}-notification-email-topic

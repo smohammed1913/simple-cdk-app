@@ -1,0 +1,32 @@
+NamePrefix: ${Application}-${Environment}
+Name: items-api
+Protocol: HTTP
+Application: ${Application}
+Stage: ${Environment}
+Description: "HTTP API for Items"
+
+
+Routes:
+  - Name: create-item
+    LambdaArn: /cdk/${Application}/${Environment}/create-item
+    IntegrationMethod: PUT
+    RouteKey: "/items"
+
+  - Name: delete-one-item
+    LambdaArn: /cdk/${Application}/${Environment}/delete-one-item
+    IntegrationMethod: DELETE
+    RouteKey: "/items/{id}"
+
+
+  - Name: get-all-items
+    LambdaArn: /cdk/${Application}/${Environment}/get-all-items
+    IntegrationMethod: GET
+    RouteKey: "/items"
+
+  - Name: get-one-item
+    LambdaArn: /cdk/${Application}/${Environment}/get-one-item
+    IntegrationMethod: GET
+    RouteKey: "/items/{id}"
+
+
+

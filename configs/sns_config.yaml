@@ -1,0 +1,5 @@
+# SNS Notifications
+SNSNotifications:
+  - SNSTopicName: ${Application}-${Environment}-notification-email-topic
+    SSMDefaultSubEmail: ${SSMDefaultSubEmail}
+    NamePrefix: ${Application}-${Environment}

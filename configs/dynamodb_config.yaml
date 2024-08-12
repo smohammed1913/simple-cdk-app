@@ -1,0 +1,5 @@
+NamePrefix: ${Application}-${Environment}
+TableName: all-items
+AttributeName: itemId
+Application: ${Application}
+Description: "Table for Items"
